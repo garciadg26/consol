@@ -1,0 +1,1161 @@
+/* VARIABLES */
+$white: white
+$black: #000000
+$yellow:#F0C169
+$consolB:#0A383F
+$whatsapp: #25D366
+$whatsappH: #128C7E
+$lightconsol:#EFFBFD
+$consol: #198D9D
+$lightacent: #FEF9F0
+$acent: #EF7D57
+$acentH: #D94812
+$lightGrey: #F4F4F4
+$cfe: #00724E
+$sistemas: #D94812
+$calentador: #0050B8
+$luminarias:#180960
+$Lexend: 'Lexend', sans-serif
+
+*
+    margin: 0
+    padding: 0
+    list-style: none
+
+ul
+    padding-left: 0
+    margin-bottom: 0
+a
+    text-decoration: none
+    color: $black
+body
+    font-size: 16px
+    font-family: $Lexend
+.tit_principal
+    font-weight: 700
+    font-size: 3rem
+    @media screen and (max-width: 587px)
+        font-size: 2.4rem
+.subTit_principal
+    text-transform: uppercase
+    font-size: 1.4rem
+    font-weight: 700
+    @media screen and (max-width: 1200px)
+        font-size: 1.2rem
+.txt_principal
+    font-size: 1rem
+    font-weight: 400
+    @media screen and (max-width: 587px)
+        font-size: 1.3rem
+input, textarea
+    width: 100%
+    font-family: $Lexend
+    font-size: 1rem
+    padding: 4px 16px
+    border: none
+    border-bottom: 1px solid $black
+    margin-top: 16px
+    margin-bottom: 16px
+
+/* MOVIL */
+.movil
+    display: none
+    @media screen and (max-width: 767px)
+        display: block
+        
+.desktop
+    display: block
+    @media screen and (max-width: 767px)
+        display: none
+
+.icon_whatsapp
+    background-image: url('../images/svg/icon_whatsapp.svg')
+.icon_mail
+    background-image: url('../images/svg/icon_mail.svg')
+.icon_facebook
+    background-image: url('../images/svg/icon_facebook.svg')
+.icon_instagram
+    background-image: url('../images/svg/icon_instagram.svg')
+.icon_map
+    background-image: url('../images/svg/icon_map.svg')
+
+
+/* BOTONES */
+.btnc
+    display: flex
+    flex-wrap: wrap
+    gap: 16px
+    &__item
+        border-radius: 8px
+        color: $white
+        padding: 10px 40px
+        transition: 0.3s
+        &--principal
+            background-color: $acent
+            &:hover
+                background-color:$acentH
+        &--whatsapp
+            background-color: $whatsapp
+            &:hover
+                background-color: $whatsappH
+            .icon_whatsapp
+                position: relative
+                top: 2px
+                margin-right: 8px
+                display: inline-block
+                width: 16px
+                height: 16px
+                background-position: center center
+                background-size: contain
+        &--secundario
+            background-color: $white
+            border: 2px solid $consol
+            color: $consol
+        &--terciario
+            background-color: $white
+            border: 2px solid $acent
+            color: $acent
+
+/* NAVEGACIÓN */
+header
+    position: fixed
+    width: 100vw
+    transition: 0.3s
+    z-index: 9
+    .navTop
+        background-color: $consol
+        .d-flex
+            height: 40px
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+        &__list
+            display: flex
+            gap: 16px
+            a
+                font-size: 0.7rem
+                color: white
+                .icon
+                    position: relative
+                    display: inline-block
+                    top: 2px
+                    width: 18px
+                    height: 18px
+                    background-position: center center
+                    background-size: contain
+            &:nth-child(1) a .icon
+                margin-right: 6px
+
+    .nav
+        position: relative
+        top: 0
+        width: 100%
+        transition: 0.3s
+        background-color: $white
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1)
+        @media screen and (max-width: 767px)
+            height: 100px
+        .container
+            @media screen and (max-width: 767px)
+                display: flex
+                align-items: center
+                justify-content: space-between
+        &__menu
+            width: 100%
+            @media screen and (max-width: 767px)
+                position: fixed
+                top: 0
+                background-color: $white
+                width: 90%
+                right: -100%
+                transition: 0.6s
+                z-index: 2
+        &__list
+            display: flex
+            flex-direction: row
+            height: 100px
+            flex-wrap: wrap
+            justify-content: space-around
+            align-items: center
+            gap: 16px
+            @media screen and (max-width: 767px)
+                width: 100%
+                height: 100vh
+                flex-direction: column
+                justify-content: start
+                align-items: center
+                text-align: center
+        &__item
+            @media screen and (max-width: 767px)
+                width: 100%
+                .contacto__icon
+                    width: 12px
+                    min-height: 12px
+                    top: 12px
+                    margin-right: 6px
+            &--especial a
+                color: $consol
+            &--logo svg
+                margin-top: 24px
+                margin-bottom: 16%
+        &__link
+            font-size: 1.2rem
+            &:hover
+                color: $acent
+        &__logo a svg
+            width: 180px
+        &__toggle
+            display: none
+            position: relative
+            cursor: pointer
+            @media screen and (max-width: 767px)
+                display: block 
+            .ion-md-menu
+                display: inline-block
+                width: 40px
+                height: 40px
+                background-image: url('../images/svg/icon_menu_toggle.svg')
+        &__close
+            display: none
+            position: absolute
+            top: 16px
+            right: 16px
+            cursor: pointer
+            @media screen and (max-width: 767px)
+                display: block
+            .ri-close-line
+                display: inline-block
+                width: 40px
+                height: 40px
+                background-image: url('../images/svg/icon_close_toggle.svg')
+    .show-menu
+        right: 0%
+        box-shadow: 0 0 16px rgba(0, 0, 0, 0.28)
+
+
+.scroll-header
+    .nav
+        position: relative
+        top: -40px
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2)
+
+/* SLIDER */ 
+.slider
+    height: 100vh
+    width: 100%
+    padding-top: 140px
+    .item
+        height: calc( 100vh - 140px )
+        background-position: center center
+        background-repeat: no-repeat
+        background-size: cover
+        &__slide1
+            background-image: url('../images/consol-bienvenido-slide1.jpg')
+            img
+                margin: 0 auto
+                width: 400px!important
+            .d-flex
+                height: calc( 100vh - 140px )
+                flex-direction: column
+                justify-content: center
+        &__slide2
+            background-image: url('../images/consol-panel-solar-slide2.jpg')
+            img
+                margin: 0 auto
+                width: 400px!important
+            .d-flex
+                height: calc( 100vh - 140px )
+                flex-direction: column
+                justify-content: center
+        &__slide3
+            background-image: url('../images/consol-calentador-solar-slide3.jpg')
+            .d-flex
+                height: calc( 100vh - 140px )
+                flex-direction: column
+                justify-content: center
+    &__tit
+        font-weight: 900
+        color: $white
+        font-size: 4vw
+        line-height: 1.2
+        @media screen and (max-width: 767px)
+            font-size: 6vw
+            line-height: 1.2
+            @media screen and (max-width: 587px)
+                font-size: 10vw
+        span
+            background-color: #06B248
+            border-radius: 12px
+            padding: 0 12px
+    &__txt
+        font-weight: 400
+        color: $white
+        font-size: 1.2rem
+        @media screen and (max-width: 587px)
+            font-size: .9rem
+    &__caption
+        font-weight: 700
+        color: $white
+        font-size: 1.5rem
+        text-transform: uppercase
+        @media screen and (max-width: 587px)
+            font-size: .8rem
+    .owl-dots
+        margin-top: -80px
+        @media screen and (max-width: 991px)
+            margin-top: -60px
+            
+
+.owl-dots
+    position: relative
+    text-align: center
+.owl-theme .owl-dots .owl-dot span 
+    width: 10px
+    height: 10px
+    margin: 5px 7px
+    background: #D6D6D6
+    display: block
+    -webkit-backface-visibility: visible
+    transition: opacity .2s ease
+    border-radius: 30px
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span
+    background: $consol
+
+.origen
+    padding: 120px 0px
+    .row
+        align-items: center
+        @media screen and (max-width: 767px)
+            .btnc
+                justify-content: center
+        .col-lg-6:nth-child(1)
+            text-align: center
+            img
+                width: 400px
+                @media screen and (max-width: 767px)
+                    width: 60%
+                    margin-bottom: 40px
+    &__tit
+        font-size: 3.4vw
+        text-align: center
+        @media screen and (max-width: 767px)
+            font-size: 2rem
+    &--consol
+        color: $consol
+
+.servicios
+    padding: 120px 0px
+    background-color: $lightGrey
+    .cardc
+        box-sizing: border-box
+        background-color: $white
+        border-radius: 12px
+        @media screen and (max-width: 991px)
+            margin-bottom: 20px
+        .subTit_principal
+            padding: 12px 0px
+            color: $consol 
+        .cardc__txt
+            display: flex
+            flex-direction: row
+            justify-content: center
+            box-sizing: border-box
+            padding: 0px 24px 
+            height: 110px
+        &:hover .cardc__img
+            background-size: 50% 70%
+        &__img
+            border-radius: 12px 12px 0px 0px
+            height: 140px
+            background-position: center center
+            background-repeat: no-repeat
+            background-size: 40% 60%
+            transition: 0.3s
+            &--cfe
+                background-color: $cfe
+                background-image: url('../images/svg/icon_cfe.svg')
+            &--calentador
+                background-color: $calentador
+                background-image: url('../images/svg/icon_calentadores.svg')
+            &--sistemas
+                background-color: $sistemas
+                background-image: url('../images/svg/icon_sitemas_aislados.svg')
+            &--luminarias
+                background-color: $luminarias
+                background-image: url('../images/svg/icon_luminarias_solares.svg')
+        &--luminarias            
+            .cardc__txt
+                align-items: center 
+                .txt_principal
+                    color: $luminarias
+                    font-size: 1.2rem
+                    font-weight: 900
+                    @media screen and (max-width: 587px)
+                        font-size: 1.8rem
+                
+    .btnc
+        justify-content: center
+
+.beneficios
+    position: relative
+    padding: 0px 0px 120px 0px
+    &::before
+        position: absolute
+        content: ""
+        width: 100%
+        height: 50%
+        top: 0
+        background-color: $lightGrey
+    .garantias
+        padding: 60px 0px
+        border-radius: 24px
+        position: relative
+        background-color: $consol
+        z-index: 1
+        .tit_principal, .txt_principal
+            color: $white
+        .txt_principal
+            max-width: 500px
+            margin: 0 auto
+            margin-bottom: 32px
+            .txt_acent
+                color: $yellow
+                font-weight: 900
+        .garantia
+            .txt_principal
+                color: $black
+                font-size: 1.1rem
+                font-weight: 700
+                line-height: 1.2
+                max-width: 150px
+                margin: 0 auto
+                @media screen and (max-width: 1200px)
+                    font-size: 1rem
+            &:hover
+                position: relative
+                top: -20px
+.garantia
+    position: relative
+    top: 0
+    box-sizing: border-box
+    padding: 26px 32px 32px 32px
+    text-align: center
+    transition: 0.3s
+    background-image: url('../images/svg/bgc_beneficios.svg')
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: 80% 100%
+    height: 210px
+    @media screen and (max-width: 1200px)
+        background-size: 100% 100%
+    &--reverse
+        background-image: url('../images/svg/bgc_beneficios_reverse.svg')
+    img
+        width: auto
+        height: 80px
+        margin-bottom: 20px
+    .txt_principal
+        color: $black
+        font-size: 1.1rem
+        font-weight: 700
+        line-height: 1.2
+        max-width: 150px
+        margin: 0 auto
+
+.proyectos
+    padding: 0px 0px 120px 0px
+    &__box
+        margin-bottom: 80px
+        @media screen and (max-width: 991px)
+            margin-bottom: 0px
+    .btnc
+        margin-top: 120px
+        justify-content: center
+        @media screen and (max-width: 991px)
+            margin-top: 0px
+    .proyecto
+        border-radius: 12px
+        position: relative  
+        height: 300px
+        transition: 0.3s
+        background-position: center center
+        background-repeat: no-repeat
+        background-size: 100% 100%
+        @media screen and (max-width: 991px)
+            margin-bottom: 90px
+        &--primero
+            background-image: url('../images/consol-proyecto-panteon-jardin.jpg')
+        &--segundo
+            background-image: url('../images/consol-proyectos-plaza-mi-lagu.jpg')
+        &--tercero
+            background-image: url('../images/consol-proyectos-restaurante-comida-china.jpg')
+        &--cuarto
+            background-image: url('../images/consol-proyectos-floricultor-sistema-camara-refrigeracion.jpg')
+        &--quinto
+            background-image: url('../images/consol-proyectos-cremeria-don-deme.jpg')
+        &--sexto
+            background-image: url('../images/consol-proyecto-residencial-ocotitlan.jpg')
+            @media screen and (max-width: 991px)
+                margin-bottom: 0px
+        &:hover
+            background-size: 120% 120%
+        &__txt
+            box-sizing: border-box
+            background-color: $consol
+            border-radius: 10px
+            padding: 16px 16px 4px 16px
+            position: absolute
+            bottom: -60px
+            width: 80%
+            margin-left: 10%
+            .tit_secundario
+                font-size: 1rem
+                text-transform: uppercase
+                color: $yellow
+                font-weight: 700
+                margin-top: 8px
+            .txt_principal
+                color: $white
+                font-size: .9rem
+            .caption
+                background-color: $acentH
+                font-size: 0.8rem
+                color: $white
+                font-weight: 400
+                padding: 2px 12px
+                border-radius: 25px
+
+.cotizacion
+    padding: 60px 0px 60px 0px
+    background-color: $consol
+    .tit_principal, .txt_principal, li a
+        color: $white
+    &__list
+        margin-top: 20px
+        a:hover
+            text-decoration: underline
+    &__item
+        margin-bottom: 12px
+        .icon
+            display: inline-block
+            width: 16px
+            height: 16px
+            margin-right: 8px
+            background-position: center center
+            background-repeat: no-repeat
+            background-size: contain
+        .icon_whatsapp_y
+            background-image: url('../images/svg/icon_whatsapp_y.svg')
+        .icon_mail_y
+            background-image: url('../images/svg/icon_mail_y.svg')
+        .icon_map_y
+            background-image: url('../images/svg/icon_map_y.svg')
+    .formulario
+        background-color: $white
+        box-sizing: border-box
+        background-color: $white
+        margin: 0 24px
+        padding: 24px
+        display: flex
+        flex-direction: column
+        border-radius: 24px
+        @media screen and (max-width: 767px)
+            margin: 24px 0 0 0
+        &__input 
+            border-bottom: 1px solid $black
+            &::placeholder
+                color: $black
+        input[type="submit"]
+            background-color: $acent
+            width: 100px
+            color: $white
+            border: none
+            border-radius: 6px
+        
+.foot
+    background-color: $consolB
+    padding: 60px 0px
+    .pleca
+        width: 100%
+        height: 22px
+        border-bottom: 1px dashed $white
+        margin-bottom: 16px
+    .txt_principal
+        color: $white
+    .tit_secundario
+        color: $white
+        font-size: 1.2rem
+        text-transform: uppercase
+        margin-bottom: 20px
+        @media screen and (max-width: 768px)
+            font-weight: 800
+            margin-top: 20px
+    &__item 
+        padding: 6px 0px
+        a
+            color: $white
+    &__list .icon
+        position: relative
+        display: inline-block
+        top: 4px
+        width: 18px
+        height: 18px
+        margin-right: 8px
+        background-position: center center
+        background-repeat: no-repeat
+        background-size: contain
+
+.legales
+    background-color: $acent
+    padding: 16px 0px 8px 0px
+    p
+        color: $white
+        text-align: center
+        font-weight: 700
+
+/* Nosotros */
+.encabezado-nosotros
+    background-image: url('../images/consol-bg-nosotros.jpg')
+.encabezado-proyectos
+    background-image: url('../images/consol-bg-proyectos.jpg')
+.encabezado-contacto
+    background-image: url('../images/consol-bg-contacto.jpg')
+.encabezado-calentador
+    background-image: url('../images/consol-bg-calentador.jpg')
+.encabezado
+    padding-top: 140px
+    .row
+        height: 240px
+    .txt_head
+        color: $white
+        font-size: 4vw
+        line-height: 1
+        font-weight: 700
+        @media screen and (max-width: 991px)
+            font-size: 7vw
+        @media screen and (max-width: 587px)
+            font-size: 3rem
+
+.intro
+    padding: 120px 0px
+    .tit_principal
+        font-size: 2.4rem
+    &--acent
+        color: $consol
+    &__col--right
+        margin-top: 100px 
+        @media screen and (max-width: 991px)
+            margin-top: 16px 
+    .nav-pills
+        .nav-item .active, .nav-pills .show>.nav-link
+            background-color: $consol!important
+            color: $white!important
+        .nav-link 
+            color: $consol
+            .nav-link:focus, .nav-link:hover
+                color: $consol
+
+.filosofia
+    padding: 120px 0px
+    background-color: $lightGrey
+    &__item
+        box-sizing: border-box
+        padding: 50px 70px
+        min-height: 410px
+        border-radius: 12px
+        background-color: $white
+        margin-bottom: 40px
+        @media screen and (max-width: 1399px)
+            min-height: 460px
+        @media screen and (max-width: 991px)
+            min-height: fit-content
+        @media screen and (max-width: 587px)
+            padding: 24px
+        &--acent
+            color: $acent
+            font-weight: 700
+        .tit_principal
+            font-size: 1.2rem
+            text-transform: uppercase
+            font-weight: 700
+            color: $consol
+
+.testimonio
+    padding: 120px 0px
+    background-image: url('../images/consol_decoration_bg.png')
+    .sliderT 
+        position: relative
+        .owl-dots
+            margin-top: 20px
+        &__item 
+            img
+                border-radius: 16px 
+        &__overlay
+            border-radius: 16px 
+            position: absolute
+            width: 100%
+            height: 100%
+            transition: 0.3s
+            background-color: rgba(0, 0, 0, 0.2)
+            &:hover
+                background-color: rgba(0, 0, 0, 0.5)
+                &::before
+                    opacity: 1
+            &::before
+                position: absolute
+                content: ""
+                width: 120px
+                height: 84px
+                top: calc( 50% - 42px )
+                left: calc( 50% - 60px )
+                transition: 0.3s
+                background-image: url('../images/svg/icon_youtube.svg')
+                background-position: center center
+                background-repeat: no-repeat
+                background-size: cover
+                opacity: .5
+#proyectos
+    padding: 120px 0px
+
+.certificaciones
+    padding: 0px 0px 80px 0px
+    position: relative
+    &::before
+        position: absolute
+        content: ""
+        width: 100%
+        height: 50%
+        bottom: 0
+        background-color: $lightGrey
+        z-index: -1
+    .certificacion
+        border-radius: 22px
+        padding: 40px 16px
+        background-color: $consol
+        @media screen and (max-width: 587px)
+            border-radius: 0px
+        &__item
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            background-color: $white
+            height: 120px
+            border-radius: 12px
+            @media screen and (max-width: 767px)
+                margin-bottom: 20px
+            img
+                width: 80%
+        &__tit
+            color: $white
+            font-size: 3rem
+            font-weight: 700
+            max-width: 800px
+            margin: 0 auto
+        &__txt
+            margin-bottom: 0
+            line-height: 1.2
+            &--acent
+                font-size: 2rem
+                font-weight: 800
+                color: $acent
+                @media screen and (max-width: 1200px)
+                    font-size: 1.6rem
+                    @media screen and (max-width: 991px)
+                        font-size: 1.4rem
+            &--consol
+                color: $consol
+                font-size: 1.8rem
+                @media screen and (max-width: 1200px)
+                    font-size: 1.5rem
+                    @media screen and (max-width: 1200px)
+                        font-size: 1.5rem
+
+.contratacion
+    background-color: $lightGrey
+    padding: 60px 0px 120px 0px
+    .cont_proceso
+        position: sticky
+        top: 200px
+        @media screen and (max-width: 587px)
+            position: relative
+            top: 0px
+    &--acent
+        color: $consol
+        font-weight: 700
+    &__step
+        display: flex
+        flex-direction: column
+        &:nth-last-child(1)
+            margin-top: 140px
+    &__item
+        width: 100%
+        display: flex
+        flex-direction: row
+        justify-content: start
+        align-items: center
+        gap: 26px
+        margin-bottom: 60px
+        &--number
+            margin-bottom: 0
+            display: flex
+            justify-content: center
+            align-items: center 
+            color: $consol
+            font-size: 3rem
+            font-weight: 700
+            height: 80px
+            width: 80px
+            border-radius: 50px
+            background-color: $white
+            @media screen and (max-width: 1200px)
+                min-height: 60px
+                height: 60px
+                min-width: 60px
+                width: 60px
+                font-size: 2.5rem
+
+        &--txt
+            margin-bottom: 0
+            display: inline-block
+            max-width: 300px
+
+.contacto
+    padding: 120px 0px
+    &__item
+        display: flex
+        flex-direction: row
+        align-items: center 
+        gap: 26px
+        margin-bottom: 40px
+    &__icon
+        display: inline-block
+        position: relative
+        min-width: 100px
+        height: 100px
+        transition: 0.3s
+        box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2)
+        background-position: center center
+        background-repeat: no-repeat
+        background-size: 50%
+        border-radius: 50px
+        @media screen and (max-width: 767px)
+            min-width: 40px
+            height: 40px
+            @media screen and (max-width: 587px)
+                min-width: 40px
+                height: 40px
+        &--whatsapp
+            background-image: url('../images/svg/icon_whatsapp_consol.svg')
+        &--mail
+            background-image: url('../images/svg/icon_mail_consol.svg')
+        &--map
+            background-image: url('../images/svg/icon_map_consol.svg')
+        &:hover
+            background-size: 50%
+
+    &__txt
+        font-size: 1.5rem
+        margin-bottom: 0
+        @media screen and (max-width: 587px)
+            font-size: 1.2rem
+    &__link
+        font-weight: 700
+        color: $consol
+
+
+.formulario
+    margin-top: 120px
+    box-sizing: border-box
+    background-color: $consol
+    border-radius: 16px
+    padding: 40px
+    @media screen and (max-width: 991px)
+        margin-top: 16px
+    &__input
+        background-color: transparent
+        border-bottom: 1px solid $white
+        color: $white
+        &::placeholder
+            color: $white
+    input[type="submit"]
+        background-color: $yellow
+        border-radius: 8px
+        padding: 10px 0px
+        width: 200px
+        color: $white
+        border: none
+
+/* __CALENTADORES */
+.calentador
+    padding: 120px 0px
+    &__head
+        box-sizing: border-box
+        padding: 24px 48px
+        border-radius: 12px
+        box-shadow: 0 0 12px rgba(0,0,0,0.2)
+        &--sm
+            @media screen and (max-width: 767px)
+                margin-bottom: 40px
+        .icon
+            position: relative
+            display: inline-block
+            width: 40px
+            height: 40px
+            top: 10px
+            margin-right: 12px
+        .icon_baja
+            background-image: url('../images/svg/consol_calentador_baja_presion.svg')
+            background-position: center center
+            background-repeat: no-repeat
+            background-size: contain
+        .icon_alta
+            background-image: url('../images/svg/consol_calentador_alta_presion.svg')
+            background-position: center center
+            background-repeat: no-repeat
+            background-size: contain
+        .tit_tercero
+            font-size: 1.6rem
+            font-weight: 800
+            &--baja
+                color: $consol
+            &--alta
+                color: $acent
+#baja, #alta, #coti
+    position: relative
+    top: -100px
+
+.cal
+    padding: 120px 0px
+    &__baja
+        background-color: $lightconsol
+    &__alta
+        background-color: $lightacent
+    &__head
+        display: flex
+        align-items: center
+        .icon
+            position: relative
+            display: inline-block
+            width: 100px
+            height: 100px
+            margin-right: 16px
+            background-position: center center
+            background-repeat: no-repeat
+            background-size: contain
+            &__baja
+                background-image: url('../images/svg/consol_calentador_baja_presion.svg')
+            &__alta
+                background-image: url('../images/svg/consol_calentador_alta_presion.svg')
+        .tit_tercero
+            font-weight: 800
+            text-transform: uppercase
+            &--baja
+                color: $consol
+            &--alta
+                color: $acent
+.solar
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    gap: 26px
+    &__item
+        width: calc( 50% - 26px )
+        display: flex
+        flex-direction: row
+        height: 190px
+        background-color: $white
+        border-radius: 12px
+        @media screen and (max-width: 991px)
+            width: 100%
+        img
+            width: 200px
+            object-fit: cover
+            border-radius: 12px 0 0 12px
+            @media screen and (max-width: 1200px)
+                width: 160px
+    &__card
+        margin: auto 0
+        padding: 0px 20px
+        .btnc__item
+            padding: 6px 40px
+            @media screen and (max-width: 587px)
+                padding: 6px 20px
+                font-size: 0.8rem
+        .txt_principal
+            font-size: 1rem
+            @media screen and (max-width: 1200px)
+                font-size: .8rem
+                @media screen and (max-width: 991px)
+                    font-size: 1rem
+                    @media screen and (max-width: 587px)
+                        font-size: .6rem
+                        margin-bottom: 4px
+        &--tit
+            display: flex
+            flex-direction: row
+            @media screen and (max-width: 1200px)
+                flex-direction: column
+                @media screen and (max-width: 991px)
+                    flex-direction: row
+                    @media screen and (max-width: 587px)
+                        flex-direction: column
+            .txt_principal
+                display: flex            
+            .icon
+                position: relative
+                display: inline-block
+                min-width: 40px
+                height: 40px
+                margin-right: 6px
+                background-position: center center
+                background-repeat: no-repeat
+                background-size: 80%
+                @media screen and (max-width: 1200px)
+                    min-width: 32px
+                    height: 32px
+                    @media screen and (max-width: 587px)
+                        min-width: 24px
+                        height: 24px
+                &__water
+                    background-image: url('../images/svg/icon_water.svg')
+                &__people
+                    background-image: url('../images/svg/icon_people.svg')
+        .tit_principal
+            font-size: 1.4rem
+            color: $black
+            margin-bottom: 8px
+            @media screen and (max-width: 1200px)
+                font-size: 1.2rem
+                @media screen and (max-width: 587px)
+                    font-size: .9rem
+    &__precio
+        position: absolute
+        font-size: 0.9rem
+        font-weight: 800
+        color: $white
+        border-radius: 12px 0px
+        padding: 8px 12px
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.3)
+        &--baja
+            background-color: $consolB
+        &--alta
+            background-color: $acentH
+
+.seguro
+    padding: 60px 0px
+    background-color: $consol
+    &__card
+        max-width: 800px
+        display: flex
+        margin: 0 auto
+        @media screen and (max-width: 587px)
+            flex-direction: column
+            align-items: center
+            text-align: center
+        .icon
+            position: relative
+            display: inline-block
+            min-width: 120px
+            height: 120px
+            margin-right: 26px  
+            @media screen and (max-width: 587px)
+                min-width: 100px
+                width: 100px
+                height: 100px
+                margin-bottom: 20px
+        .tit_principal
+            font-size: 3rem
+            color: $white
+            span
+                color: $yellow
+
+/* __MENSAJE DE ERROR__ */
+.formulario__input-error 
+    font-family: var(--font-auto-pro)
+    font-size: 0.9rem
+    margin-bottom: 0px
+    padding: 4px 8px
+    display: none
+
+.formulario__input-error-activo 
+    display: block
+
+.formulario__validacion-estado 
+    position: absolute
+    right: 28px
+    top: 30px
+    z-index: 100
+    font-size: 16px
+    opacity: 0
+
+#banner_reserva .formulario__validacion-estado 
+    position: absolute
+    right: unset
+    top: 18px
+    margin-left: 120px
+
+#banner_reserva .item_form:nth-child(2) .formulario__validacion-estado
+    margin-left: 144px
+
+#banner_reserva .item_form:nth-child(4) .formulario__validacion-estado 
+    margin-left: 156px
+
+.formulario__mensaje, .formulario__captcha
+    height: 45px
+    line-height: 45px
+    background: #F66060
+    padding: 0 15px
+    border-radius: 3px
+    margin-bottom: 12px
+    display: none
+
+.formulario__mensaje-activo 
+    display: block
+
+.formulario__mensaje-exito 
+    margin-top: 8px
+    font-size: 14px
+    background-color: #1eab0b
+    padding: 10px 15px
+    color: white
+    display: none
+
+.formulario__mensaje-exito-activo
+    display: block
+
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+
+.formulario__grupo-correcto .formulario__validacion-estado
+    color: #1ed12d
+    opacity: 1
+
+
+.formulario__grupo-incorrecto .formulario__label
+    color: #bb2929
+
+
+.formulario__grupo-incorrecto .formulario__validacion-estado
+    color: #bb2929
+    opacity: 1
+
+.formulario__grupo-incorrecto .formulario__input 
+    border: 3px solid #bb2929
+
+.modal-body
+    padding: 0
+
+/* __BTN_WHATSAPP */
+#btn_whatsApp
+    position: fixed
+    bottom: 24px
+    right: 24px
+    z-index: 99
+    img
+        width: 60px
+        height: auto
+        transform: scale(1)
+        transition: all 0.3s ease
+        &:hover
+            transform: scale(1.1)
