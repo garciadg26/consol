@@ -168,8 +168,13 @@ header .navTop__list {
   gap: 16px;
 }
 header .navTop__list a {
-  font-size: 0.7rem;
+  font-size: 1rem;
   color: white;
+}
+@media screen and (max-width: 767px) {
+  header .navTop__list a {
+    font-size: 0.7rem;
+  }
 }
 header .navTop__list a .icon {
   position: relative;
@@ -236,6 +241,9 @@ header .nav__list {
     text-align: center;
   }
 }
+header .nav__item {
+  padding: 8px 0px;
+}
 @media screen and (max-width: 767px) {
   header .nav__item {
     width: 100%;
@@ -247,10 +255,27 @@ header .nav__list {
     margin-right: 6px;
   }
 }
-header .nav__item--especial a {
+header .nav .active {
+  position: relative;
+}
+header .nav .active::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  bottom: 0px;
+  height: 2px;
+  background-color: #EF7D57;
+}
+@media screen and (max-width: 767px) {
+  header .nav .active::before {
+    width: 20%;
+    left: 40%;
+  }
+}
+header .nav .active--especial a {
   color: #198D9D;
 }
-header .nav__item--logo svg {
+header .nav .active--logo svg {
   margin-top: 24px;
   margin-bottom: 16%;
 }
@@ -703,6 +728,11 @@ header .show-menu {
   padding: 2px 12px;
   border-radius: 25px;
 }
+@media screen and (max-width: 768px) {
+  .proyectos .mt-80m {
+    margin-top: 80px;
+  }
+}
 
 .cotizacion {
   padding: 60px 0px 60px 0px;
@@ -755,12 +785,13 @@ header .show-menu {
 }
 .cotizacion .formulario__input {
   border-bottom: 1px solid #000000;
+  color: #000000 !important;
 }
 .cotizacion .formulario__input::-moz-placeholder {
-  color: #000000;
+  color: #000000 !important;
 }
 .cotizacion .formulario__input::placeholder {
-  color: #000000;
+  color: #000000 !important;
 }
 .cotizacion .formulario input[type=submit] {
   background-color: #EF7D57;
@@ -800,6 +831,9 @@ header .show-menu {
 }
 .foot__item a {
   color: white;
+}
+.foot__item a:hover {
+  text-decoration: underline;
 }
 .foot__list .icon {
   position: relative;
@@ -880,12 +914,16 @@ header .show-menu {
     margin-top: 16px;
   }
 }
+.intro .nav-pills {
+  gap: 8px;
+}
 .intro .nav-pills .nav-item .active, .intro .nav-pills .nav-pills .show > .nav-link {
   background-color: #198D9D !important;
   color: white !important;
 }
 .intro .nav-pills .nav-link {
   color: #198D9D;
+  background-color: #F4F4F4;
 }
 .intro .nav-pills .nav-link .nav-link:focus, .intro .nav-pills .nav-link .nav-link:hover {
   color: #198D9D;
@@ -1586,4 +1624,10 @@ header .show-menu {
 }
 #btn_whatsApp img:hover {
   transform: scale(1.1);
+}
+
+.aviso {
+  padding: 200px 0px 120px;
+  max-width: 900px;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */

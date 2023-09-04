@@ -34,7 +34,7 @@
                 <title>Consol | Sitio oficial</title>
             </head>
             <body>
-                <img src="https://tiposlibres.com/test/vitabee/Public/images/Imagen-mensaje-contacto.jpg" width="100%" height="auto">
+                <img src="https://consol.com.mx/test/Public/images/consol-mensaje-form.jpg" width="100%" height="auto">
             </body>
             </html>
             ';
@@ -62,6 +62,16 @@
             $success = @mail($email_to, $asunto, $body, $headers);
             echo "Msn enviado re-captcha";
             
+            if($correo != ''){
+
+                $asunto = 'Consol - Nuevo mensaje.';
+                $email_from = 'contacto@consol.com.mx';
+                $email_to = $correo;
+                $body = $cabecera . "\n\n" . '<br><h3>Asunto: ' . $asunto . '</h3>' . "\n\n" . '<br><b>Gracias<b> por contactar con nosotros. <br><br> Lo más antes posible atenderemos tú mensaje.';
+
+                $success = @mail($email_to, $asunto, $body, $headers);
+                echo "Msn enviado re-captcha";
+            }
 
     //     } else {
     //         echo "Error al comprobar el reCaptcha";

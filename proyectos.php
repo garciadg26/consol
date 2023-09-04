@@ -8,36 +8,30 @@
     <?php include_once "Public/include/head.php"; ?>
 </head>
 <body>
-    <?php include_once "Public/include/nav.php"; ?>
-
-    <section class="encabezado encabezado-proyectos">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-12">
-                    <h1 class="txt_head">Proyectos.</h1>
-                </div>
-            </div>
-        </div>
-    </section>
+    <?php include_once "Public/include/nav.php"; 
+    $Nhead = "proyectos";
+    $Thead = "Proyectos.";
+        include_once "Public/include/header.php";
+    ?>
 
     <section id="proyectos" class="proyectos">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center ">
-                    <h1 class="tit_principal mb-5">Proyectos recientes</h1>
+                    <h1 class="tit_principal mb-5 section__title">Proyectos recientes</h1>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-md-6 proyectos__box">
+                <div class="col-lg-4 col-md-6 proyectos__box home__photo3">
                     <div class="proyecto proyecto--primero">
                         <div class="proyecto__txt">
                             <span class="caption">CDMX</span>
                             <h5 class="tit_secundario">Instalación comercial</h5>
-                            <p class="txt_principal">Nuevo Panteón Jardín, 8 paneles de 550 w potencia pico instalada 4.4 kw.</p>
+                            <p class="txt_principal">Nuevo Panteón Jardín, 9 paneles de 550 w potencia pico de  4.95 kw.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 proyectos__box">
+                <div class="col-lg-4 col-md-6 proyectos__box home__photo5">
                     <div class="proyecto proyecto--segundo">
                         <div class="proyecto__txt">
                             <span class="caption">Edomex</span>
@@ -46,7 +40,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 proyectos__box">
+                <div class="col-lg-4 col-md-6 home__photo7">
                     <div class="proyecto proyecto--tercero">
                         <div class="proyecto__txt">
                             <span class="caption">Edomex</span>
@@ -56,7 +50,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="proyecto proyecto--cuarto">
+                    <div class="proyecto proyecto--cuarto home__photo1">
                         <div class="proyecto__txt">
                             <span class="caption">Edomex</span>
                             <h5 class="tit_secundario">Instalación comercial</h5>
@@ -65,7 +59,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="proyecto proyecto--quinto">
+                    <div class="proyecto proyecto--quinto home__photo2">
                         <div class="proyecto__txt">
                             <span class="caption">Edomex</span>
                             <h5 class="tit_secundario">Instalación comercial</h5>
@@ -74,7 +68,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="proyecto proyecto--sexto">
+                    <div class="proyecto proyecto--sexto home__photo3">
                         <div class="proyecto__txt">
                             <span class="caption">Edomex</span>
                             <h5 class="tit_secundario">Instalación comercial</h5>
@@ -83,9 +77,9 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row mt-80m">
                 <div class="col-md-12">
-                    <div class="btnc">
+                    <div class="btnc home__photo3">
                         <a class="btnc__item btnc__item--principal" href="#coti">Agenda una cita</a>
                     </div>
                 </div>
@@ -99,21 +93,21 @@
             <div class="row">
                 <div class="certificacion">
                     <div class="col-md-12 text-center">
-                        <h1 class="certificacion__tit mb-5">Contamos con certificación de la red conocer.</h1>
+                        <h1 class="certificacion__tit mb-5 section__title">Contamos con certificación de la red conocer.</h1>
                         <div class="row">
                             <div class="col-md-5">
-                                <div class="certificacion__item text-center">
+                                <div class="certificacion__item text-center home__photo1">
                                     <img class="img-fluid" src="Public/images/consol_certificacion_eco.jpg" alt="Certificación ECO586.01">
                                 </div>
                             </div>
                             <div class="col-md-3">
-                                <div class="certificacion__item">
+                                <div class="certificacion__item home__photo3">
                                     <h2 class="certificacion__txt certificacion__txt--acent">+ de 6 años</h2>
                                     <p class="certificacion__txt certificacion__txt--consol">de experiencia</p>
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <div class="certificacion__item">
+                                <div class="certificacion__item home__photo5">
                                     <h2 class="certificacion__txt certificacion__txt--acent">+ de 155,000 wp</h2>
                                     <p class="certificacion__txt certificacion__txt--consol">de potencia instalada</p>
                                 </div>
@@ -140,27 +134,27 @@
                 </div>
                 <div class="col-lg-5 offset-lg-1 col-md-6 offset-md-0">
                     <div class="contratacion__step">
-                        <article class="contratacion__item">
+                        <article class="contratacion__item specs__img">
                             <p class="contratacion__item--number"><span>1</span></p>
                             <p class="contratacion__item--txt">Primer encuentro explicación detallada de la función de los sistemas obtención del recibo de luz.</p>
                         </article>
-                        <article class="contratacion__item">
+                        <article class="contratacion__item specs__img">
                             <p class="contratacion__item--number"><span>2</span></p>
                             <p class="contratacion__item--txt">Presentación de propuesta económica cotización.</p>
                         </article>
-                        <article class="contratacion__item">
+                        <article class="contratacion__item specs__img">
                             <p class="contratacion__item--number"><span>3</span></p>
                             <p class="contratacion__item--txt">Elaboración y firma de contratos.</p>
                         </article>
-                        <article class="contratacion__item">
+                        <article class="contratacion__item specs__img">
                             <p class="contratacion__item--number"><span>4</span></p>
                             <p class="contratacion__item--txt">Instalación de sistemas fotovoltaico.</p>
                         </article>
-                        <article class="contratacion__item">
+                        <article class="contratacion__item specs__img">
                             <p class="contratacion__item--number"><span>5</span></p>
                             <p class="contratacion__item--txt">Elaboración de expediente para trámite ante CFE y cambio de medidor.</p>
                         </article>
-                        <article class="contratacion__item">
+                        <article class="contratacion__item specs__img">
                             <p class="contratacion__item--number"><span>6</span></p>
                             <p class="contratacion__item--txt">Puesta en marcha del sistema.</p>
                         </article>

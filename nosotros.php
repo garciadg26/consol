@@ -9,27 +9,23 @@
     <link rel="stylesheet" href="Public/css/owl.carousel.min.css">
 </head>
 <body>
-    <?php include_once "Public/include/nav.php"; ?>
+    <?php include_once "Public/include/nav.php"; 
+        $Nhead = "nosotros";
+        $Thead = "Sobre nosotros.";
+            include_once "Public/include/header.php";
+    ?>
     
-    <section class="encabezado encabezado-nosotros">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-12">
-                    <h1 class="txt_head">Sobre <br> nosotros.</h1>
-                </div>
-            </div>
-        </div>
     </section>
 
     <section class="intro">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5 col-md-12">
+                <div class="col-lg-5 col-md-12 section__title">
                     <h2 class="tit_principal mb-5">Te ayudamos a <span class="intro--acent">invertir</span> y <span class="intro--acent">ahorrar</span> inteligentemente.</h2>
                     <!-- Nav pills -->
                     <ul class="nav nav-pills mb-4">
                         <li class="nav-item">
-                        <a class="nav-link active" data-bs-toggle="pill" href="#home">¿Por qué escogemos?</a>
+                        <a class="nav-link active" data-bs-toggle="pill" href="#home">¿Por qué escogermos?</a>
                         </li>
                         <li class="nav-item">
                         <a class="nav-link" data-bs-toggle="pill" href="#menu1">Misión</a>
@@ -58,17 +54,17 @@
                 </div>
                 <div class="col-lg-6 offset-lg-1 col-md-10 offset-md-1 intro__col--right">
                     <div class="row">
-                        <div class="col-md-6 col-sm-6">
+                        <div class="col-md-6 col-sm-6 home__photo3">
                             <article class="garantia">
                                 <img src="Public/images/svg/icon_informacion_mexico.svg" alt="">
                                 <p class="txt_principal">Empresa 100% mexicana</p>
                             </article>
                             <article class="garantia">
                                 <img src="Public/images/svg/icon_informacion_panel_solar.svg" alt="">
-                                <p class="txt_principal">Usamos módulos fotovoltaicos</p>
+                                <p class="txt_principal">Paneles solares de la más alta calidad.</p>
                             </article>
                         </div>    
-                        <div class="col-md-6 col-sm-6">
+                        <div class="col-md-6 col-sm-6 home__photo5">
                             <article class="garantia">
                                 <img src="Public/images/svg/icon_informacion_6.svg" alt="">
                                 <p class="txt_principal">Años de experiencia nos respaldan</p>
@@ -88,14 +84,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h1 class="tit_principal mb-5">Nuestra filosofía</h1>
+                    <h1 class="tit_principal mb-5 section__title">Nuestra filosofía</h1>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xl-10 offset-xl-1 col-lg-12 offset-lg-0 col-md-12 offset-md-0">
                     <div class="row">
                         <div class="col-lg-6 col-md-12">
-                            <div class="filosofia__item">
+                            <div class="filosofia__item home__photo1">
                                 <h2 class="tit_principal">Compromiso con la excelencia sostenible.</h2>
                                 <p class="txt_principal">
                                     En <span class="filosofia__item--acent">Consol</span>, estamos comprometidos con ofrecer productos de alta calidad y soluciones sostenibles que ayuden a nuestros clientes a reducir su huella de carbono. 
@@ -103,7 +99,7 @@
                                     Trabajamos incansablemente para mejorar constantemente nuestros productos y servicios para estar a la vanguardia de la innovación y la sostenibilidad.
                                 </p>
                             </div>
-                            <div class="filosofia__item">
+                            <div class="filosofia__item home__photo3">
                                 <h2 class="tit_principal">Orientación al cliente.</h2>
                                 <p class="txt_principal">
                                     Nos centramos en satisfacer las necesidades y deseos de nuestros clientes. 
@@ -115,7 +111,7 @@
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-12">
-                            <div class="filosofia__item">
+                            <div class="filosofia__item home__photo1">
                                 <h2 class="tit_principal">Transparencia y honestidad en la información.</h2>
                                 <p class="txt_principal">
                                     Valoramos la confianza que nuestros clientes depositan en nosotros. 
@@ -125,7 +121,7 @@
                                     Creemos que la transparencia es la base de una relación comercial sólida y duradera.
                                 </p>
                             </div>
-                            <div class="filosofia__item">
+                            <div class="filosofia__item home__photo3">
                                 <h2 class="tit_principal">Integridad en todas las acciones.</h2>
                                 <p class="txt_principal">
                                     La integridad es el pilar fundamental de nuestra filosofía empresarial. Actuamos con honestidad y ética en todas nuestras interacciones, tanto con nuestros clientes como con nuestros colaboradores y proveedores. 
@@ -144,13 +140,13 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12">
-                    <h2 class="tit_principal mb-5">Clientes felices ahorrando e invirtiendo inteligentemente.</h2>
-                    <div class="btnc mb-5">
-                        <a class="btnc__item btnc__item--principal" href="#">Ver proyectos</a>
+                    <h2 class="tit_principal mb-5 section__title">Clientes felices ahorrando e invirtiendo inteligentemente.</h2>
+                    <div class="btnc mb-5 section__title">
+                        <a class="btnc__item btnc__item--principal" href="proyectos.php ">Ver proyectos</a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12">
-                    <div class="sliderT owl-carousel owl-theme">
+                    <div class="sliderT owl-carousel owl-theme home__photo3">
                         <div class="sliderT__item">
                             <div class="sliderT__overlay"></div>
                             <img src="Public/images/consol-testimonio-01.jpg" alt="">

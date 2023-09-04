@@ -14,8 +14,8 @@
                         <li class="foot__item"><a href="nosotros.php">Sobre nosotros</a></li>
                         <li class="foot__item"><a href="proyectos.php">Proyectos</a></li>
                         <li class="foot__item"><a href="calentador-solar.php">Calentador solar</a></li>
-                        <li class="foot__item"><a href="#">Política de cookies</a></li>
-                        <li class="foot__item"><a href="#">Aviso de privacidad</a></li>
+                        <li class="foot__item"><a href="politicas-cookies.php">Política de cookies</a></li>
+                        <li class="foot__item"><a href="aviso-privacidad.php">Aviso de privacidad</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 col-sm-6">
@@ -36,4 +36,6 @@
 
     <!-- JQUERY -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="Public/js/main.js?ver=1.1.10"></script>
+    <script type="text/javascript" src="Public/js/reveal.js"></script>
+    <script type="text/javascript" src="Public/js/anima.js"></script>
+    <script type="text/javascript" src="Public/js/main.js?ver=1.1.12"></script>

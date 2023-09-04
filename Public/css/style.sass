@@ -133,8 +133,10 @@ header
             display: flex
             gap: 16px
             a
-                font-size: 0.7rem
+                font-size: 1rem
                 color: white
+                @media screen and (max-width: 767px)
+                    font-size: 0.7rem
                 .icon
                     position: relative
                     display: inline-block
@@ -186,6 +188,7 @@ header
                 align-items: center
                 text-align: center
         &__item
+            padding: 8px 0px
             @media screen and (max-width: 767px)
                 width: 100%
                 .contacto__icon
@@ -193,6 +196,18 @@ header
                     min-height: 12px
                     top: 12px
                     margin-right: 6px
+        .active
+            position: relative
+            &::before
+                position: absolute
+                content: ""
+                width: 100%
+                bottom: 0px
+                height: 2px
+                background-color: $acent
+                @media screen and (max-width: 767px)
+                    width: 20%
+                    left: 40%
             &--especial a
                 color: $consol
             &--logo svg
@@ -524,6 +539,9 @@ header
                 font-weight: 400
                 padding: 2px 12px
                 border-radius: 25px
+    .mt-80m
+        @media screen and (max-width: 768px)
+            margin-top: 80px
 
 .cotizacion
     padding: 60px 0px 60px 0px
@@ -563,8 +581,9 @@ header
             margin: 24px 0 0 0
         &__input 
             border-bottom: 1px solid $black
+            color: $black!important
             &::placeholder
-                color: $black
+                color: $black!important
         input[type="submit"]
             background-color: $acent
             width: 100px
@@ -594,6 +613,8 @@ header
         padding: 6px 0px
         a
             color: $white
+            &:hover
+                text-decoration: underline
     &__list .icon
         position: relative
         display: inline-block
@@ -647,11 +668,13 @@ header
         @media screen and (max-width: 991px)
             margin-top: 16px 
     .nav-pills
+        gap: 8px
         .nav-item .active, .nav-pills .show>.nav-link
             background-color: $consol!important
             color: $white!important
         .nav-link 
             color: $consol
+            background-color: $lightGrey
             .nav-link:focus, .nav-link:hover
                 color: $consol
 
@@ -1159,3 +1182,8 @@ header
         transition: all 0.3s ease
         &:hover
             transform: scale(1.1)
+
+.aviso
+    padding: 200px 0px 120px
+    max-width: 900px
+    margin: 0 auto

@@ -3,36 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> - Consol</title>
+    <title>Calentadores solares - Consol</title>
 
     <?php include_once "Public/include/head.php"; ?>
 </head>
 <body>
 
-    <?php include_once "Public/include/nav.php"; ?>
-
-    <section class="encabezado encabezado-calentador">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-12">
-                    <h1 class="txt_head">Calentadores <br> solares.</h1>
-                </div>
-            </div>
-        </div>
-    </section>
+    <?php include_once "Public/include/nav.php"; 
+        $Nhead = "calentador";
+        $Thead = "Calentadores solares.";
+            include_once "Public/include/header.php";
+    ?>
     
     <!-- CALENTADORES -->
     <section class="calentador">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h1 class="tit_principal mb-5">Tipos de calentadores.</h1>
+                    <h1 class="tit_principal mb-5 section__title">Tipos de calentadores.</h1>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-xl-10 col-lg-12 col-md-12">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6 home__photo3">
                             <div class="calentador__head calentador__head--sm text-center">
                                 <h2 class="tit_tercero tit_tercero--solar mb-4"><i class="icon icon_baja"></i>Baja presión</h2>
                                 <p class="txt_principal mb-4">Es un sistema que utiliza la energía del sol para calentar agua. El proceso es relativamente simple: cuando el sol brilla, los colectores solares absorben su calor y calientan el agua dentro de ellos.</p>
@@ -41,7 +35,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 home__photo5">
                             <div class="calentador__head text-center">
                                 <h2 class="tit_tercero tit_tercero--alta mb-4"><i class="icon icon_alta"></i>Alta presión</h2>
                                 <p class="txt_principal mb-4">Es un sistema que utiliza la energía del sol para calentar agua. El proceso es relativamente simple: cuando el sol brilla, los colectores solares absorben su calor y calientan el agua dentro de ellos.</p>
@@ -61,7 +55,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="cal__head mb-5">
+                    <div class="cal__head mb-5 section__title">
                         <i class="icon icon__baja"></i>
                         <div class="cal__head--tit">
                             <h3 class="tit_tercero tit_tercero--baja">Baja presión</h3>
@@ -73,7 +67,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="solar">
-                        <article class="solar__item">
+                        <article class="solar__item home__photo1">
                             <img src="Public/images/calentador_solar.jpg" alt="">
                             <p class="solar__precio solar__precio--baja">Desde $15,000</p>
                             <div class="solar__card">
@@ -89,7 +83,7 @@
                                 </div>
                             </div>
                         </article>
-                        <article class="solar__item">
+                        <article class="solar__item home__photo3">
                             <img src="Public/images/calentador_solar.jpg" alt="">
                             <p class="solar__precio solar__precio--baja">Desde $15,000</p>
                             <div class="solar__card">
@@ -105,7 +99,7 @@
                                 </div>
                             </div>
                         </article>
-                        <article class="solar__item">
+                        <article class="solar__item home__photo1">
                             <img src="Public/images/calentador_solar.jpg" alt="">
                             <p class="solar__precio solar__precio--baja">Desde $15,000</p>
                             <div class="solar__card">
@@ -121,7 +115,7 @@
                                 </div>
                             </div>
                         </article>
-                        <article class="solar__item">
+                        <article class="solar__item home__photo3">
                             <img src="Public/images/calentador_solar.jpg" alt="">
                             <p class="solar__precio solar__precio--baja">Desde $15,000</p>
                             <div class="solar__card">
@@ -137,7 +131,7 @@
                                 </div>
                             </div>
                         </article>
-                        <article class="solar__item">
+                        <article class="solar__item home__photo1">
                             <img src="Public/images/calentador_solar.jpg" alt="">
                             <p class="solar__precio solar__precio--baja">Desde $15,000</p>
                             <div class="solar__card">
@@ -153,7 +147,7 @@
                                 </div>
                             </div>
                         </article>
-                        <article class="solar__item">
+                        <article class="solar__item home__photo3">
                             <img src="Public/images/calentador_solar.jpg" alt="">
                             <p class="solar__precio solar__precio--baja">Desde $15,000</p>
                             <div class="solar__card">
@@ -169,7 +163,7 @@
                                 </div>
                             </div>
                         </article>
-                        <article class="solar__item">
+                        <article class="solar__item home__photo1">
                             <img src="Public/images/calentador_solar.jpg" alt="">
                             <p class="solar__precio solar__precio--baja">Desde $15,000</p>
                             <div class="solar__card">
@@ -193,7 +187,7 @@
 
     <!-- GARANTÍA -->
     <section class="seguro">
-        <div class="container">
+        <div class="container case__img">
             <div class="seguro__card">
                 <div class="icon icon__seguro">
                     <!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -277,7 +271,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="cal__head mb-5">
+                    <div class="cal__head mb-5 section__title">
                         <i class="icon icon__alta"></i>
                         <div class="cal__head--tit">
                             <h3 class="tit_tercero tit_tercero--alta">Alta presión</h3>
@@ -289,7 +283,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="solar">
-                        <article class="solar__item">
+                        <article class="solar__item home__photo1">
                             <img src="Public/images/calentador_solar.jpg" alt="">
                             <p class="solar__precio solar__precio--alta">Desde $15,000</p>
                             <div class="solar__card">
@@ -305,7 +299,7 @@
                                 </div>
                             </div>
                         </article>
-                        <article class="solar__item">
+                        <article class="solar__item home__photo3">
                             <img src="Public/images/calentador_solar.jpg" alt="">
                             <p class="solar__precio solar__precio--alta">Desde $15,000</p>
                             <div class="solar__card">
@@ -321,7 +315,7 @@
                                 </div>
                             </div>
                         </article>
-                        <article class="solar__item">
+                        <article class="solar__item home__photo1">
                             <img src="Public/images/calentador_solar.jpg" alt="">
                             <p class="solar__precio solar__precio--alta">Desde $15,000</p>
                             <div class="solar__card">
@@ -337,7 +331,7 @@
                                 </div>
                             </div>
                         </article>
-                        <article class="solar__item">
+                        <article class="solar__item home__photo5">
                             <img src="Public/images/calentador_solar.jpg" alt="">
                             <p class="solar__precio solar__precio--alta">Desde $15,000</p>
                             <div class="solar__card">

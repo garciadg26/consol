@@ -101,6 +101,9 @@
                                 </svg>
                             </a>
                         </li>
+                        <li class="nav__item movil">
+                            <a href="index.php" class="nav__link active-link">Inicio</a>
+                        </li>
                         <li class="nav__item">
                             <a href="nosotros.php" class="nav__link active-link">Nosotros</a>
                         </li>
